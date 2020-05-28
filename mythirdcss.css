@@ -1,0 +1,161 @@
+﻿/*@media (min-width:500px) and (max-width:900px)*/
+
+#container
+{display:flex; flex-direction:column; width: 850px;
+}
+#aside{display:flex; flex-wrap:wrap; background-color: #ff5722; border-left: 1px solid #212121; 
+       border-right: 1px solid #212121; border-top: 1px solid #212121; }
+.propos:nth-of-type(3) {flex-grow:1;}
+.photo {
+    text-align: center;
+}
+
+.coordonnees 
+   { display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.loisirs:nth-of-type(4) {
+    flex-shrink: 1;
+}
+
+.guitar {
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid black;
+}
+
+.running {
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid black;
+}
+
+.compass {
+    border: 1px solid black;
+    border-radius: 10px 10px 10px 10px;
+}
+
+h2 {
+    border-top: 1px solid #212121;
+    border-bottom: 1px solid #212121;
+    background-color: #90caf9;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+   }
+
+.loisirs {
+    display: flex;
+    flex-direction: column;
+}
+
+.sport {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+ }
+
+#section {
+    border-right: 1px solid #212121;
+    border-bottom: 1px solid #212121;
+    border-left: 1px solid #212121;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    background-color: #90caf9;
+}
+
+#texte {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+}
+
+#formations {
+    display: flex;
+    flex-direction: column;
+}
+
+.soustitre {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.openclassrooms {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.amtv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.cefam {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#experiences {
+    display: flex;
+    flex-direction: column;
+}
+
+.pro {
+    display: flex;
+    flex-direction: column;
+}
+
+.pro1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.pro2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.pro3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#recommandations {
+    display: flex;
+    flex-direction: column;
+}
+
+.gaetan {
+    width: 50%;
+}
+
+.mentors {
+    display: flex;
+    flex-direction: row;
+}
+
+.annee {
+    width: 30%;
+}
+
+h3 {
+    text-decoration: underline;
+    text-align: right;
+    width: auto;
+}

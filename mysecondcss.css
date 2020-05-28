@@ -1,0 +1,21 @@
+/*@media (max-width:500px)pour les mobiles*/
+#container
+{display: flex; flex-direction: column-reverse; width: auto; margin: auto;}
+#aside {
+    display: flex;
+    flex-direction: column; background-color: #ff5722;
+}
+.photo{border: 1px solid #212121; width:auto;}
+.contact{border:1px solid #212121; width:auto; margin:auto;}
+.propos{border:1px solid #212121; width:auto; margin:auto;}
+.loisirs{border:1px solid #212121; width:auto; margin:auto;}
+#section{display:flex; flex-direction: column; background-color:#90caf9;}
+.titre{border:1px solid #212121; width:auto; margin:auto;}
+.formations{display:flex; flex-direction: column;}
+.soustitre{border:1px solid #212121; width:auto; margin:auto; display: flex; flex-direction: column; flex-wrap:wrap;}
+.form{display:flex; flex-direction: column;}
+.openclassrooms{border:1px solid #212121; width:auto; margin:auto; display: flex; flex-direction: column; flex-wrap:wrap;}
+.amtv{border:1px solid #212121; width:auto; margin:auto; display: flex; flex-direction: column; flex-wrap:wrap;}
+.cefam{border:1px solid #212121; width:auto; margin:auto; display: flex; flex-direction: column; flex-wrap:wrap;}
+.experiences{border:1px solid #212121; width:auto; margin:auto; display: flex; flex-direction: column; flex-wrap:wrap;}
+.recommandations{border:1px solid #212121; width:auto; margin: auto; display: flex; flex-direction: column; flex-wrap:wrap;}
