@@ -1,51 +1,188 @@
-@font-face{font-family:'Cantarell-Regular';
-                src:format('truetype') url('Cantarell-Regular.ttf');
+/*Feuille de style de grands écrans de plus de 1280px de résolution*/
+
+
+
+@media screen and (min-width:1280px) {
+    #conteneur
+    {
+        display: flex;
+        flex-direction: row;
+        width: 1024px;
+        margin: auto;
+    }
+    #aside 
+    {
+        border: 1px solid #212121;
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        background-color: #ff5722;
+    }
+    .photo 
+    {
+        text-align: center;
+    }
+    .coordonnees
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .propos:nth-of-type(3) {
+        flex-grow: 1;
+    }
+    .selfdescription {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+    .loisirs:nth-of-type(4) {
+        flex-shrink: 1;
+    }
+    .guitar 
+    {
+        border-radius: 10px 10px 10px 10px;
+        border: 1px solid black;
+    }
+    .running {
+        border-radius: 10px 10px 10px 10px;
+        border: 1px solid black;
+    }
+    .compass
+    {
+        border: 1px solid black;
+        border-radius: 10px 10px 10px 10px;
+    }
+    h2
+    {
+        border-top: 1px solid #212121;
+        border-bottom: 1px solid #212121;
+        background-color: #90caf9;
+        text-align: center;
+            }
+    h3{text-decoration:underline;}
+    ul
+    {
+        list-style: none;
+        margin-right: 15px;
+        margin-top: 5px;
+    }
+
+    .loisirs
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .sport {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 20%;
+        margin-bottom: 10%;
+    }
+    #section {
+        border-top: 1px solid #212121;
+        border-right: 1px solid #212121;
+        border-bottom: 1px solid #212121;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 5%;
+        background-color: #90caf9;
+    }
+    .titre{text-shadow:2px 2px 2px #212121;}
+    #texte 
+    {
+        display: flex;
+        flex-direction: column;
+        padding-right: 5px;
+    }
+
+    #formations
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .soustitre 
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: flex-end;
+    }
+    .form
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .openclassrooms {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .amtv {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .cefam {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    #experiences {
+        display: flex;
+        flex-direction: column;
+    }
+    .pro 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .pro1 
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .pro2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .pro3 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    #recommandations {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gaetan {
+        width: 50%;
+    }
+    .mentors {
+        display: flex;
+        flex-direction: row;
+    }
+    .annee {
+        width: 30%;
+    }
+    h3
+    {
+        text-decoration: underline;
+        text-align: right;
+        width: auto;
+    }
+    a{text-decoration:none; color:#212121;   
+    }
+    a:hover{background-color:#cccccc; border-bottom:1px solid black; font-size:1.2em;}
+    a:visited{color:#333333;}
+    abbr{ text-decoration:none;}
+    i{font-size:1.3em;}
 }
-#conteneur
-{display:flex; flex-direction:row; width: 1024px; margin:auto;}
-#aside
-{border:1px solid #212121; width: 25%; display: flex; flex-direction: column; background-color: #ff5722;}
-.photo
-{text-align: center;}
-.coordonnees{display:flex; flex-direction:column; flex-wrap:wrap;}
-.propos:nth-of-type(3){flex-grow:1;}
-.selfdescription{margin-left:15px; margin-right:15px; margin-top:15px;}
-.loisirs:nth-of-type(4){flex-shrink:1;}
-.guitar{border-radius:10px 10px 10px 10px; border: 1px solid black;}
-.running{border-radius:10px 10px 10px 10px; border:1px solid black;}
-.compass{border:1px solid black; border-radius:10px 10px 10px 10px;}
-
-h2
-{border-top: 1px solid #212121; border-bottom: 1px solid #212121; background-color:#90caf9; text-align:center;}
-ul{list-style:none; margin-left:5px; margin-right:10px; margin-top:10px;}
-.loisirs{display:flex; flex-direction:column;}
-
-.sport{display:flex; flex-direction: row; justify-content:space-around; margin-top:20%; margin-bottom: 10%;}
-
-#section
-{border-top: 1px solid #212121; border-right:1px solid #212121; border-bottom: 1px solid #212121; width: 75%; display:flex; 
- flex-direction:column; padding-left:5%; background-color: #90caf9;}
-#texte
-{display:flex; flex-direction:column; padding-right:5px;}
-
-#formations
-{display:flex; flex-direction:column;}
-.soustitre{display: flex; flex-direction: row; flex-wrap: nowrap; align-content:flex-end;}
-.form{display: flex; flex-direction: column;}
-.openclassrooms{display: flex; flex-direction: row; flex-wrap: nowrap;}
-.amtv{display: flex; flex-direction: row; flex-wrap: nowrap;}
-.cefam{display: flex; flex-direction: row; flex-wrap: nowrap;}
-
-#experiences
-{display: flex; flex-direction: column;}
-.pro
-{display: flex; flex-direction: column;}
-.pro1{display: flex; flex-direction: row; flex-wrap: nowrap;}
-.pro2{display: flex; flex-direction: row; flex-wrap: nowrap;}
-.pro3{display: flex; flex-direction: row; flex-wrap: nowrap;}
-#recommandations{display: flex; flex-direction: column;}
-.gaetan{width: 50%;}
-.mentors {display: flex; flex-direction: row;}
-.annee{width: 30%;}
-h3{text-decoration:underline; text-align:right; width:auto;}
-

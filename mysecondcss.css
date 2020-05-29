@@ -1,21 +1,141 @@
-/*@media (max-width:500px)pour les mobiles*/
-#container
-{display: flex; flex-direction: column-reverse; width: auto; margin: auto;}
-#aside {
-    display: flex;
-    flex-direction: column; background-color: #ff5722;
+/*Feuille de style pour les écrans de moins de 700px, comme  ceux des portables*/
+
+
+@media screen and (max-width:700px) {
+    #container {
+        display: flex;
+        flex-direction: column-reverse; align-content: space-between; border: 1px solid black;
+        width: auto;
+        margin: auto;
+    }
+
+    #aside {
+        display: flex; margin-left:2px; margin-right:2px;
+        flex-flow: column wrap; align-content:space-around; align-items:center;
+        background-color: #ff5722; padding-left:2px; padding-right:2px;
+    }
+    .mot{ text-align:center;}
+    
+
+    .photo {
+        align-content:center;
+        width: auto;
+    }
+    .coordonnees{ display:flex; flex-flow:row nowrap; }
+
+    .contact {
+        display: flex; flex-direction:column;
+        width: auto;
+        margin: auto;
+    }
+    ul{ list-style:none;       
+    }
+    abbr{text-decoration:none;}
+
+    .propos {
+        border-top: 1px solid #212121; border-bottom:1px solid #212121; padding-left:2px; padding-right:2px;
+        width: auto;
+        margin: auto;
+    }
+    .loisirs {
+        display:flex; flex-direction:column;
+        width: auto;
+        margin: auto;
+    }
+    .sport{display:flex; flex-flow: row wrap; justify-content:space-around; }
+
+    #section {
+        display: flex; margin-left:2px; margin-right:2px; padding-left:2px; padding-right: 2px;
+        flex-flow: column wrap; justify-content: space-around; align-content: center;
+        background-color: #90caf9;
+    }
+    h3{text-decoration:underline; text-align:center;}
+
+    .titre {
+        text-shadow: 2px 2px 2px #212121;
+        width: auto;
+        margin: auto;
+    }
+
+    .formations {
+        display: flex; 
+        flex-flow: column wrap; justify-content: space-around; align-content: center; align-items: center;
+    }
+    .soustitre {
+        
+        width: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .openclassrooms
+    {        
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .amtv 
+    {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-flow: column wrap;
+    
+    }
+    .cefam
+    {
+     
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .experiences {
+        border: 1px solid #212121;
+        width: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .recommandations
+    {
+        border: 1px solid #212121;
+        width: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    a{text-decoration:none; color: black;}
+    a:hover{ font-size:1.2em; color:#663300;}
+    a:visited{color:#666666;}
+    i{font-size:1.3em;}
+    
+    .guitar{    border-radius: 10px 10px 10px 10px;
+        border: 1px solid black;
+    }
+    .running {
+        border-radius: 10px 10px 10px 10px;
+        border: 1px solid black;
+    }
+    .compass {
+        border: 1px solid black;
+        border-radius: 10px 10px 10px 10px;
+    }
+    p{font-size:1.2em;}
+
 }
-.photo{border: 1px solid #212121; width:auto;}
-.contact{border:1px solid #212121; width:auto; margin:auto;}
-.propos{border:1px solid #212121; width:auto; margin:auto;}
-.loisirs{border:1px solid #212121; width:auto; margin:auto;}
-#section{display:flex; flex-direction: column; background-color:#90caf9;}
-.titre{border:1px solid #212121; width:auto; margin:auto;}
-.formations{display:flex; flex-direction: column;}
-.soustitre{border:1px solid #212121; width:auto; margin:auto; display: flex; flex-direction: column; flex-wrap:wrap;}
-.form{display:flex; flex-direction: column;}
-.openclassrooms{border:1px solid #212121; width:auto; margin:auto; display: flex; flex-direction: column; flex-wrap:wrap;}
-.amtv{border:1px solid #212121; width:auto; margin:auto; display: flex; flex-direction: column; flex-wrap:wrap;}
-.cefam{border:1px solid #212121; width:auto; margin:auto; display: flex; flex-direction: column; flex-wrap:wrap;}
-.experiences{border:1px solid #212121; width:auto; margin:auto; display: flex; flex-direction: column; flex-wrap:wrap;}
-.recommandations{border:1px solid #212121; width:auto; margin: auto; display: flex; flex-direction: column; flex-wrap:wrap;}

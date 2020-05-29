@@ -1,161 +1,189 @@
-﻿/*@media (min-width:500px) and (max-width:900px)*/
+﻿/*Feuille de style pour les écrans inférieurs à 1280px*/
 
-#container
-{display:flex; flex-direction:column; width: 850px;
-}
-#aside{display:flex; flex-wrap:wrap; background-color: #ff5722; border-left: 1px solid #212121; 
-       border-right: 1px solid #212121; border-top: 1px solid #212121; }
-.propos:nth-of-type(3) {flex-grow:1;}
-.photo {
-    text-align: center;
-}
+@media screen and (min-width:700px) and (max-width:1280px) {
+    #conteneur {
+        display: flex;
+        flex-direction: column; border: 1px solid #212121; width: 900px; margin:auto;
+    }
+    #aside {
+        display: flex;
+        flex-flow: column wrap; justify-content: space-around;
+        background-color: #ff5722;          
+    }
 
-.coordonnees 
-   { display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
+    .propos:nth-of-type(3) {
+        flex-grow: 1;
+    }
 
-.loisirs:nth-of-type(4) {
-    flex-shrink: 1;
-}
+    .photo {
+        text-align: center;
+    }
 
-.guitar {
-    border-radius: 10px 10px 10px 10px;
-    border: 1px solid black;
-}
+    .coordonnees {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 
-.running {
-    border-radius: 10px 10px 10px 10px;
-    border: 1px solid black;
-}
+    .loisirs:nth-of-type(4) {
+        flex-shrink: 1;
+    }
 
-.compass {
-    border: 1px solid black;
-    border-radius: 10px 10px 10px 10px;
-}
+    .guitar {
+        border-radius: 10px 10px 10px 10px;
+        border: 1px solid black;
+    }
 
-h2 {
-    border-top: 1px solid #212121;
-    border-bottom: 1px solid #212121;
-    background-color: #90caf9;
-    text-align: center;
-}
+    .running {
+        border-radius: 10px 10px 10px 10px;
+        border: 1px solid black;
+    }
 
-ul {
-    list-style: none;
-   }
+    .compass {
+        border: 1px solid black;
+        border-radius: 10px 10px 10px 10px;
+    }
 
-.loisirs {
-    display: flex;
-    flex-direction: column;
-}
+    h2 {        
+        border-bottom: 1px solid #212121;
+        background-color: #90caf9;
+        text-align: center;
+    }
+    h1{text-align:center;}
+    h3{text-decoration:underline; text-align:center;}
+    .titre{text-shadow:2px 2px 2px #212121;}
+    ul {
+        list-style: none;
+    }
 
-.sport {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
- }
+    .loisirs {
+        display: flex;
+        flex-direction: column;
+    }
 
-#section {
-    border-right: 1px solid #212121;
-    border-bottom: 1px solid #212121;
-    border-left: 1px solid #212121;
-    display: flex;
-    flex-direction: column;
-    padding-left: 5%;
-    background-color: #90caf9;
-}
+    .sport {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
 
-#texte {
-    display: flex;
-    flex-direction: column;
-    padding-right: 5px;
-}
+    #section {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5%;
+        background-color: #90caf9;
+    }
 
-#formations {
-    display: flex;
-    flex-direction: column;
-}
+    #texte {
+        display: flex;
+        flex-direction: column;
+        padding-right: 5px;
+    }
 
-.soustitre {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: flex-end;
-}
+    #formations {
+        display: flex;
+        flex-direction: column;
+    }
 
-.form {
-    display: flex;
-    flex-direction: column;
-}
+    .soustitre {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: flex-end;
+    }
 
-.openclassrooms {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
 
-.amtv {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
+    .openclassrooms {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
 
-.cefam {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
+    .amtv {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
 
-#experiences {
-    display: flex;
-    flex-direction: column;
-}
+    .cefam {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    abbr{text-decoration:none;}
 
-.pro {
-    display: flex;
-    flex-direction: column;
-}
+    #experiences {
+        display: flex;
+        flex-direction: column;
+    }
 
-.pro1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
+    .pro {
+        display: flex;
+        flex-direction: column;
+    }
 
-.pro2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
+    .pro1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
 
-.pro3 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
+    .pro2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
 
-#recommandations {
-    display: flex;
-    flex-direction: column;
-}
+    .pro3 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
 
-.gaetan {
-    width: 50%;
-}
+    #recommandations {
+        display: flex;
+        flex-direction: column;
+    }
 
-.mentors {
-    display: flex;
-    flex-direction: row;
-}
+    .gaetan {
+        width: 50%;
+    }
 
-.annee {
-    width: 30%;
-}
+    .mentors {
+        display: flex;
+        flex-direction: row;
+    }
 
-h3 {
-    text-decoration: underline;
-    text-align: right;
-    width: auto;
+    .annee {
+        width: 30%;
+    }
+
+    h3 {
+        text-decoration: underline;
+        text-align: center;
+        width: auto;
+    }
+    a{text-decoration:none; color: black;}
+    a:hover{ font-size:1.2em; color:#663300;}
+    a:visited{color:#666666;}
+    i{font-size:1.3em;}
+
+    
+    .guitar{    border-radius: 10px 10px 10px 10px;
+        border: 1px solid black;
+    }
+    .running {
+        border-radius: 10px 10px 10px 10px;
+        border: 1px solid black;
+    }
+    .compass {
+        border: 1px solid black;
+        border-radius: 10px 10px 10px 10px;
+    }
+    p{font-size:1.1em;}
+
 }
